@@ -49,8 +49,5 @@ int main()
 	cout << "Witaj w programie mnozacym 2 liczby calkowite" << endl;
 	kalkulator kk;
 	kk.petla();
-	//kk.wprowadzanie_liczb();
-	//kk.mnozenie();
-	kk.petla();
 	return 0;
 }
