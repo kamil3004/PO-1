@@ -13,8 +13,6 @@ class kalkulator {
 		int z = 0;
 		void wprowadzanie_liczb();
 		void mnozenie();
-		void wynik();
-
 };
 
 void kalkulator::wprowadzanie_liczb()
@@ -24,7 +22,10 @@ void kalkulator::wprowadzanie_liczb()
 	cout << "Wprowadz y: ";
 	cin >> y;
 	cout << x << " * " << y << endl;
-
+}
+void kalkulator::mnozenie() {
+	z = x * y;
+	cout << "Wynik to: " << z << endl;
 }
 
 
@@ -34,5 +35,6 @@ int main()
 	cout << "Witaj w programie mnozacym 2 liczby calkowite" << endl;
 	kalkulator kk;
 	kk.wprowadzanie_liczb();
+	kk.mnozenie();
 	return 0;
 }
