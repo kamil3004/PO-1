@@ -1,7 +1,4 @@
-﻿// PO-1.cpp: definiuje punkt wejścia dla aplikacji.
-//
-
-#include <iostream>
+﻿#include <iostream>
 
 
 
