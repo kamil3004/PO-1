@@ -4,6 +4,7 @@
 #include <iostream>
 
 
+
 using namespace std;
 
 class kalkulator {
@@ -13,6 +14,7 @@ class kalkulator {
 		int z = 0;
 		void wprowadzanie_liczb();
 		void mnozenie();
+		void petla();
 };
 
 void kalkulator::wprowadzanie_liczb()
@@ -27,14 +29,27 @@ void kalkulator::mnozenie() {
 	z = x * y;
 	cout << "Wynik to: " << z << endl;
 }
+void kalkulator::petla() {
+	char klawisz;
+	do
+	{
+		kalkulator::wprowadzanie_liczb();
+		kalkulator::mnozenie();
+		cout << "Aby opuscic program wcisnij e lub inny aby kontynuowac \n";
+		cin >> klawisz;
 
+	} while (klawisz!='e');
+	cout << "Koniec";
+	return ;
+}
 
 
 int main()
 {
 	cout << "Witaj w programie mnozacym 2 liczby calkowite" << endl;
 	kalkulator kk;
-	kk.wprowadzanie_liczb();
-	kk.mnozenie();
+	//kk.wprowadzanie_liczb();
+	//kk.mnozenie();
+	kk.petla();
 	return 0;
 }
